@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+  <style>
+    html,
+body {
+  background-color: #F0E4ED;
+}
+
+/* Navbar*/
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #7B2E68;
+  font-size: 24px;
+  font-family: Copperplate;
+}
+
+a:hover {
+  border-bottom: 1px #20263f solid;
+}
+
+.navbar__social-media {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__links i {
+  margin: 0px;
+  color: #c8882d;
+  font-size: 18px;
+}
+.navbar__links i:hover {
+  border-bottom: 1px #20263f solid;
+}
+
+.navigation li:hover {
+  background-color: #20263f;
+}
+
+/* Title Format */
+h1 {
+  color: #20263f;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  display: center;
+
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 75px;
+  margin-bottom: 30px;
+  animation-name: titleIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Grid Format */
+/*Formats the text inside the image*/
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #20263f;
+}
+.container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+}
+
+img {
+  border-radius: 10px;
+  padding: 5px;
+}
+.description {
+  display: none;
+  position: absolute;
+}
+
+.container > div:hover {
+  transform: scale(1.1);
+}
+.container > div:hover .description {
+  display: block;
+  text-align: center;
+}
+
+.container > div:hover img {
+  opacity: 0.3;
+}
+/*Footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.footer__tagline-title {
+  color: #20263f;
+  font-size: 24px;
+  font-family: Lora;
+}
+
+.footer__tagline {
+  font-style: italic;
+  color: #F362CF;
+}
+
+body {
+	background: linear-gradient(-45deg, #F5C4E9, #CDF5C4, #ECE61E, #EE8CAB);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+	height: 250vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+
+  </style>
+</head>
+
+<body>
+
+<!-- Nav bar -->
+    <nav class="navbar">
+        <div aria-labelledby="navigation-menu">
+            <ul class="navbar__navigation">
+               
+                <li>
+                    <a href="#">Music Videos</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Merchandise</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Upcoming Events</a>
+          
+    </nav>
+    <!-- Heading -->
+          <head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<h1 class="animate__animated animate__wobble">I'm on tonight, you know my hips don't lie.</h1>
+    
+
+  <div class="d-flex flex-column justify-content-center w-100 h-100">
+</div>        
+          
+          <!-- Grid -->
+    <section class="container">
+       
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Shakira.JPG/1200px-Shakira.JPG" alt="First description" />
+            <span class="description"></span>
+        </div>
+        <div>
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shakira-performs-in-concert-at-madison-square-garden-on-news-photo-1580658439.jpg?crop=0.600xw:0.867xh;0.184xw,0.0885xh&resize=480:*">
+            <span class="description"></span>
+        </div>
+          <div>
+            <img src="https://64.media.tumblr.com/198d333a13667ffb3164fb45a2e5f5cd/91c67ff817b67ba5-77/s250x400/affacd6d6cbb550fd3815f9104221f047b75b0f1.gifv">
+            <span class="description"></span>
+        </div>
+        <div>
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2020%2F02%2Fshakira-2-2000.jpg">
+            <span class="description">
+            </span>
+        </div>
+        <div>
+            <img src="https://1159025897.rsc.cdn77.org/data/images/full/80087/shakira.jpg">
+            <span class="description"></span>
+        </div>
+    
+        <div>
+            <img src="https://i.guim.co.uk/img/media/6a2425e95a7be26fff9c61e033919fb9c7287a4a/0_164_4893_2935/master/4893.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=47d5a1d7d7fea1b8820465a30d2bb597">
+            <span class="description"></span>
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/originals/98/99/dd/9899dd1d2f196f700fa00072a45e032b.jpg">
+            <span class="description"></span>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTNkZTUxOTgtOGJkOS00ZDgwLTg3OWYtODFjYjYzMzQ0Mzg3XkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_.jpg">
+            <span class="description"></span>
+        </div>
+        <div>
+            <img src="https://share.cdn.viber.com/pg_download?id=0-04-01-c1aadc48ffd16064d22dd51aae2e9cce5bba88a5a6a9b242ac1af7c3a2f02169&filetype=jpg&type=icon">
+            <span class="description"></span>
+        </div>
+        <div>
+            <img src="https://static.dw.com/image/17782270_303.jpg">
+            <span class="description"></span>
+        </div>
+    
+     
+    </section>
+
+    <footer class="footer">
+        <h2 class="footer__tagline-title">
+             <span class="footer__tagline">Shakira Shakira</span> 
+            
+        </h2>
+    </footer>
+          
+         
+
+</body>
+
+</html>
+
+
+
+
